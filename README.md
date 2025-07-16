@@ -1,26 +1,23 @@
 # LLASP
 
-This is the official repository of our paper **LLASP: Fine-tuning Large Language Models for Answer Set Programming**, by Erica Coppolillo, Francesco Calimeri, Giuseppe Manco, Simona Perri, and Francesco Ricca, accepted at the International Conference on Principles of Knowledge Representation and Reasoning (KR '24).
+This repository contains the experimental code of the extended version of the paper _LLASP: Fine-tuning Large Language Models for Answer Set Programming_, accepted at the KR2024 Conference and currently submitted to the IEEE Transactions on Artificial Intelligence (TAI) Journal.
+In the current version, we fine-tuned the Large Language Model to be either **prompt variant** or support **complex** problems, beyond core tasks.
 
-## USAGE
+If you want to use the legacy code of the Conference paper, please switch to the "KR2024" branch.
 
-The `data` folder contains the compressed version of the train, validation and test sets used to perform the experiments.
+### PRELIMINARIES
 
-If you want to regenerate the data, launch `python3 dataset_generation.py`, for train and validation sets, and `python3 test_dataset_generation.py` for the test set.
+To launch the fine-tuning process of the model (Gemma-2B), you need the API token provided by HuggingFace.  
 
-Launch `python3 model_training.py` to fine-tune the base model (Gemma 2b) and `python3 model_testing.py` to test its performance over the test set.
+### USAGE
 
-## CITATION
+1. To generate the training and validation data used in the training phase, launch `python3 dataset_generation_extension.py`. 
+2. Next, launch `python3 test_dataset_generation_extension.py` for generating the test set.
+3. Execute `python3 model_training_extension.py` to fine-tune the base model (Gemma 2b).
+4. Launch`python3 model_testing_extension.py` to test its performance over the test set.
 
-If you use our code, please cite us:
+In each python file, you should modify the variable `turn` to specify which kind of task you are interested in, choosing among "**core**" (for core problems), "**core-invariance**" (for prompt-invariance), and "**complex**" (for complex problems).
 
-```
-@inproceedings{coppolilloLLASP,
-author = {Coppolillo, Erica and Calimeri, Francesco and Manco, Giuseppe and Perri, Simona and Ricca, Francesco},
-title = {LLASP: fine-tuning large language models for answer set programming},
-year = {2024},
-doi = {10.24963/kr.2024/78},
-booktitle = {Proceedings of the 21st International Conference on Principles of Knowledge Representation and Reasoning},
-series = {KR '24}
-}
-```
+### REQUIREMENTS
+
+You can install the required packages by launching `pip install -r requirements.txt`.
