@@ -3,6 +3,7 @@ import numpy as np
 from operator import itemgetter
 import random
 
+print("ciao")
 
 def incipit():
     return "Write an ASP program for the following problem."
