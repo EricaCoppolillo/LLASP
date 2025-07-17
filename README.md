@@ -1,9 +1,6 @@
 # LLASP
 
-This repository contains the experimental code of the extended version of the paper _LLASP: Fine-tuning Large Language Models for Answer Set Programming_, accepted at the KR2024 Conference and currently submitted to the IEEE Transactions on Artificial Intelligence (TAI) Journal.
-In the current version, we fine-tuned the Large Language Model to be either **prompt variant** or support **complex** problems, beyond core tasks.
-
-If you want to use the legacy code of the Conference paper, please switch to the "KR2024" branch.
+This repository contains the experimental code of the paper _Fine-Tuning LLMs for Answer Set Programming_, currently under submission at the IEEE Transactions on Artificial Intelligence (TAI) Journal.
 
 ### PRELIMINARIES
 
