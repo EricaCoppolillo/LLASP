@@ -1,6 +1,6 @@
 # _Fine-Tuning LLMs for Answer Set Programming_
 
-This repository contains the experimental code of the paper _Fine-Tuning LLMs for Answer Set Programming_, currently under submission at the IEEE Transactions on Artificial Intelligence (TAI) Journal.
+This repository contains the experimental code of the paper _Fine-Tuning LLMs for Answer Set Programming_, currently under submission at the Journal of Intelligent Information Systems (JIIS).
 
 ### PRELIMINARIES
 
