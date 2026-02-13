@@ -1,6 +1,6 @@
 # _Fine-Tuning LLMs for Answer Set Programming_
 
-This repository contains the experimental code of the paper _Fine-Tuning LLMs for Answer Set Programming_, currently under submission at the Journal of Intelligent Information Systems (JIIS).
+This repository contains the experimental code of the paper _Fine-Tuning LLMs for Answer Set Programming_, accepted at the Journal of Intelligent Information Systems (JIIS), published by Springer.
 
 ### PRELIMINARIES
 
@@ -18,3 +18,17 @@ In each python file, you should modify the variable `turn` to specify which kind
 ### REQUIREMENTS
 
 You can install the required packages by launching `pip install -r requirements.txt`.
+
+### CITE
+
+If you want to use our code, please cite us.
+
+```bibtex
+@article{coppolillo2026finetuning,
+	author = {Coppolillo, Erica and Calimeri, Francesco and Manco, Giuseppe and Perri, Simona and Ricca, Francesco},
+	doi = {10.1007/s10844-025-01017-4},
+	journal = {Journal of Intelligent Information Systems},
+	title = {Fine-tuning LLMs for answer set programming},
+	year = {2026},
+}
+```
